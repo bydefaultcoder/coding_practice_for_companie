@@ -15,7 +15,6 @@ public class MinWindSubstring {
     static int minWinSubString(String source,String target){
         int minWin = 0;
         HashMap<Character,Integer> need = new HashMap<>();
-        HashMap<Character,Integer> map = new HashMap<>();
         // preprocessing
         for(char c:target.toCharArray()){
             need.put(c,need.getOrDefault(c, 0)+1);
