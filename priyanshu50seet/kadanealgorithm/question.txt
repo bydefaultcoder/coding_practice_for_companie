@@ -1,0 +1,115 @@
+🟢 EASY (Understand the Core)
+1️⃣ Maximum Subarray Sum
+
+Problem
+Given an integer array, find the maximum sum of a contiguous subarray.
+
+✔ Classic Kadane
+✔ Must solve in O(n)
+
+2️⃣ Best Time to Buy and Sell Stock
+
+Problem
+Given stock prices, find the maximum profit by buying and selling once.
+
+✔ Kadane on price differences
+✔ Converts problem to max subarray
+
+3️⃣ Maximum Prefix Sum
+
+Problem
+Find the maximum prefix sum of the array.
+
+✔ Prefix logic (no reset)
+✔ Helps differentiate from Kadane
+
+🟡 MEDIUM (Variants & Twists)
+4️⃣ Maximum Circular Subarray Sum
+
+Problem
+Array is circular. Find maximum subarray sum.
+
+✔ Use Kadane twice
+✔ Handle all-negative case
+
+5️⃣ Maximum Product Subarray
+
+Problem
+Find contiguous subarray with the maximum product.
+
+✔ Track both max & min
+✔ Negative numbers twist
+
+6️⃣ Maximum Sum Subarray of Size at Least K
+
+Problem
+Find maximum sum of subarray with length ≥ k.
+
+✔ Prefix sum + Kadane
+✔ Hybrid logic
+
+🟠 HARD (Advanced Kadane Applications)
+7️⃣ Maximum Subarray with One Deletion
+
+Problem
+Find maximum subarray sum after deleting at most one element.
+
+✔ DP-style Kadane
+✔ Two states
+
+8️⃣ Maximum Sum Rectangle in 2D Matrix
+
+Problem
+Find the rectangle with maximum sum in a matrix.
+
+✔ Apply Kadane on compressed rows
+✔ 2D → 1D reduction
+
+9️⃣ Maximum Absolute Subarray Sum
+
+Problem
+Find the maximum absolute sum of any subarray.
+
+✔ Kadane + inverse Kadane
+✔ Trick problem
+
+🔟 Split Array for Maximum Subarray Sum
+
+Problem
+Split array into two non-overlapping subarrays such that sum is maximized.
+
+✔ Prefix Kadane + Suffix Kadane
+✔ Precomputation
+
+🧠 How to Solve (MANDATORY METHOD)
+
+For each problem:
+
+Write brute force idea (mentally)
+
+Identify where reset happens
+
+Track currentSum and maxSum
+
+Handle all-negative edge case
+
+Dry run with at least one example
+
+🔑 Kadane Master Rule (MEMORIZE)
+
+If current sum becomes worse than starting fresh, reset.
+
+❌ Common Conceptual Mistakes
+
+Confusing prefix sum with Kadane
+
+Initializing currentSum = 0
+
+Forgetting negative-only arrays
+
+Resetting blindly without comparison
+
+🎯 Completion Milestone
+
+If you can solve Problems 1–7 confidently, you are strong in Kadane.
+Problems 8–10 put you at advanced competitive level.
