@@ -12,7 +12,6 @@ public class ReverseOfString {
             left++;
             right--;
         }
-        
         return new String(charArr);
     }
 }

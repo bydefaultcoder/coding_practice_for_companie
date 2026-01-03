@@ -10,7 +10,6 @@ public class BuySell {
         int maxProfit = 0;
         for(int i=1;i<prices.length;i++){
             currentSum += prices[i]-prices[i-1];
-
             if(currentSum<0){
                 currentSum=0;
             }
