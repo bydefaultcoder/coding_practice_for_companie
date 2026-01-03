@@ -11,9 +11,11 @@ public class Anagram {
     static boolean validAnagram(String t,String s){
         boolean ans=true;
         HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Integer,Integer> mapk = new HashMap<>();
         for(char c : t.toCharArray() ){
             map.put(c,map.getOrDefault(c, 0)+1);
         }
+        
         for(char c : s.toCharArray() ){
             if(!map.containsKey(c)){
                 return false;

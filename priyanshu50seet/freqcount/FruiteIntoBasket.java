@@ -1,3 +1,4 @@
+package freqcount;
 import java.util.*;
 public class FruiteIntoBasket {
         //9️⃣ Fruits Into Baskets
